@@ -18,3 +18,8 @@ class Scoreboard(Turtle):                           # Here we implement a scoreb
     def get_score(self):
         return self.score
 
+    def game_over(self):
+        self.clear()
+        self.goto(0,0)
+        self.write(f"You've Lost! Final Score: {self.score}", align="center", font=("Courier", 28, "normal"))
+
