@@ -47,10 +47,6 @@ while playing:
     screen.update()                             # We only want to update after every square has been moved to make our animation smoother
     time.sleep(.1)                              # Slow down our snake
 
-score = scoreboard.get_score()
-final_score = Turtle()
-final_score.color('white')
-final_score.penup()
-final_score.write(f"You've Lost! Final Score: {score}", align="center", font=("Courier", 28, "normal"))
+scoreboard.game_over()
 
 screen.exitonclick()
